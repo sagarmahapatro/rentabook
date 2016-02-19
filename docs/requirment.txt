@@ -1,0 +1,49 @@
+www.bookforrent.com
+book rental management
+
+this system handle both ranting of soft copy book and hard copy book. 
+a book can be stored in system as both hard copy and soft copy. administrator can purchase  one or more  hard copy of a book and store it in his store forr rental.
+soft copy of the  book will be stored in a server.
+
+each book is tracked throw isbin number. and each book can be given for rent for default particular period .the default time period is configurable and can be 
+different for  hard copy and soft copy.
+
+rental process
+hard copy
+if a book is hard copy  then member can  put a request for a book that will be delivered to the address and  will be picked up from the address. if the customer 
+extend the renewal before  the end of default date he can enjoy the same rental cost else if user failed to renew then the rental will be get doubled then
+total due is same as the cost of the book.
+
+the user can pay the rent when he returns the 
+
+
+user will pay the whole amount if he loss the book or any damage happens to the book during rental period
+
+softcopy.
+
+the user will get link through which he can access the book. the link will be remain active   for default renew priod . 
+user can extent the rental period before it gets expire.
+
+user can pay rental off front to access soft copy and by paying more he  can extend the rental period to another default period
+
+
+administrator
+
+login into the system
+add book to system
+remove book to system 
+
+
+soft copy books
+rented with link with expiry date and renew access remainder mail 
+hard copy books
+duration 
+
+guest user
+browse books
+
+student login 
+
+student history (see history)
+request for paper book(queue the request )
+see which book he has requested and their status
