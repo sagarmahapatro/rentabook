@@ -6,9 +6,9 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
+    <module>Persistent</module>
+	<module>CoreServices</module>
   	<module>RichWebUI</module>
     <module>WebAPI</module>
-    <module>CoreServices</module>
-    <module>Persistent</module>
   </modules>
 </project>
