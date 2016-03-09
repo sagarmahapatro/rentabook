@@ -1,0 +1,6 @@
+sudo npm install -g yo
+
+sudo npm install -g yo generator-angular2
+
+yo angular2
+sudo npm install

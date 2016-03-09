@@ -1,0 +1,10 @@
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('sagar');
+
+CREATE USER 'sagar'@'localhost' IDENTIFIED BY 'sagar';
+
+GRANT ALL PRIVILEGES ON * . * TO 'sagar'@'localhost';
+
+-----------------------
+run equibase  from maven
+------------------------------
+mvn liquibase:update 
