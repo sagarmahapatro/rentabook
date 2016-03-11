@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/jdbc
+http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<import resource="spring-jpa.xml" />
+	<bean id="propertyPlaceHolder" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	    <property name="order" value="0"></property>
+	    <property name="locations">
+	        <list>
+	            <value>classpath:collection/server.propertiess</value>
+	        </list>
+	    </property>
+	</bean>
+	
+	<bean class="org.gizmo.hsql.spring.HyperSqlDbServer" id="hsqldb"
+		init-method="start">
+		<constructor-arg>
+			<value>
+				server.database.0=${server.database.0}
+	            server.dbname.0=${server.dbname.0}
+	            server.remote_open=${server.remote_open}
+	            hsqldb.reconfig_logging=${hsqldb.reconfig_logging}
+	            server.port=${server.port}
+			</value>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.hsqldb.jdbc.JDBCDriver" />
+        <property name="url" value="jdbc:hsqldb:hsql://localhost:9002/rentabook" />
+        <property name="username" value="admin" />
+        <property name="password" value="pa55word" />
+    </bean>
+    
+    
+	
+</beans>
