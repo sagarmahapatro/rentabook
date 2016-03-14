@@ -6,7 +6,7 @@
 		<artifactId>BookRentalSystem</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>Persistent</artifactId>
+	<artifactId>rentabook-persistent</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>org.liquibase</groupId>

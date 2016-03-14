@@ -1,0 +1,6 @@
+FROM ubuntu:14
+
+RUN apt-get update
+RUB apt-get -y install tomcat
+
+EXPOSE 80
