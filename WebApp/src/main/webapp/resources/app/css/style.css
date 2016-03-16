@@ -1,0 +1,25 @@
+.app-footer
+{
+    clear: both;
+    border: 1px groove #aaaaaa;
+    background: #c0c0c0;
+    color: black;
+    padding: 0;
+    text-align: right;
+    line-height: normal;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+}
+
+.app-container {
+	
+	margin: 10px;
+}
+
+.app-header {
+	height : 50px;
+	margin: 10px;
+}

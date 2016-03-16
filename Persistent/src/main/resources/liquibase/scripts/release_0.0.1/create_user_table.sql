@@ -4,8 +4,9 @@
 USE rentabook;
 create table  user (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    firstName VARCHAR(6) NOT NULL,
-    lastName  VARCHAR(6) NOT NULL,
+    firstName VARCHAR(16) NOT NULL,
+    lastName  VARCHAR(16) NOT NULL,
+    version INT(6),
     email VARCHAR(50),
     password VARCHAR(20)
 );

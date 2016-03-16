@@ -5,6 +5,5 @@
 http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context.xsd">
-	<import resource="classpath*:META-INF/spring/rentabook-service-config.xml" />
-	<context:component-scan base-package="com.rentabook.webapp.controllers" />
+	<import resource="classpath:META-INF/spring/rentabook-service-config.xml" />
 </beans>

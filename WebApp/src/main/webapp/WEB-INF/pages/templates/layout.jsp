@@ -20,28 +20,29 @@
 <link href="${stylecss}" rel="stylesheet">
 </head>
 <body>
+	<div class="app-wraper">
+		<div class="app-header">
+			<tiles:insertAttribute name="header" />
+		</div>
+		<div class="app-menu">
+			<tiles:insertAttribute name="menu" />
+		</div>
+		<div class="app-container">
+			<tiles:insertAttribute name="body" />
+		</div>
 
-	<div class="app-header">
-		<tiles:insertAttribute name="header" />
+		<hr>
+		<footer class="app-footer">
+			<tiles:insertAttribute name="footer" />
+		</footer>
 	</div>
-	<div class="app-menu">
-		<tiles:insertAttribute name="menu" />
-	</div>
-	<div class="app-container">
-		<tiles:insertAttribute name="body" />
-	</div>
-
-	<hr>
-	<footer>
-		<tiles:insertAttribute name="footer" />
-	</footer>
-
+	
+	<spring:url value="/resources/jquary/jquery-2.2.1.js" var="jqueryjs" />
 	<spring:url value="/resources/bootstrap-3.3.6-dist/js/bootstrap.js"
 		var="bootstrapjs" />
-	<spring:url value="/resources/jquary/jquery-2.2.1.js" var="jqueryjs" />
-	<spring:url value="/resources/app/js/js/main.js" var="mainjs" />
-	<script src="${bootstrapjs}"></script>
+	<spring:url value="/resources/app/js/main.js" var="mainjs" />
 	<script src="${jqueryjs}"></script>
+	<script src="${bootstrapjs}"></script>
 	<script src="${mainjs}"></script>
 </body>
 </html>
