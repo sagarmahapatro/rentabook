@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset codecentric-docs:release_1.create_user_table.sql
+--changeset rent_a_book:release_0.0.1.create_user_table.sql
 
 USE rentabook;
 create table  user (

@@ -44,7 +44,16 @@
 			<artifactId>spring-ws-security</artifactId>
 		</dependency>
 
-		
+		<dependency>
+			<groupId>jdom</groupId>
+			<artifactId>jdom</artifactId>
+
+		</dependency>
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>WebServices</finalName>

@@ -138,15 +138,33 @@
 			<dependency>
 				<groupId>jdom</groupId>
 				<artifactId>jdom</artifactId>
-				<version>2.0.1</version>
+				<version>1.1</version>
 			</dependency>
 			<dependency>
 				<groupId>jaxen</groupId>
 				<artifactId>jaxen</artifactId>
-				<version>1.1</version>
+				<version>1.1.6</version>
 			</dependency>
 			<!-- webservices dependencies -->
 
 		</dependencies>
 	</dependencyManagement>
+	<repositories>
+		<repository>
+			<id>maven-dependancy-repo</id>
+			<url>http://mvnrepository.com/artifact/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>maven-plugin-repo</id>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
