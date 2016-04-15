@@ -14,11 +14,11 @@ import com.rentabook.services.IUserManagmentService;
 @Controller
 public class AuthenticateUserController {
 	private static final Logger logger = Logger.getLogger(AuthenticateUserController.class);
-	
+
 	@Autowired
 	@Qualifier("usermanagmentservice")
 	IUserManagmentService userManagmentService = null;
-	
+
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {
 		logger.debug(" index() method is called  ");
@@ -63,20 +63,25 @@ public class AuthenticateUserController {
 		}
 
 	}
-	
-	
+
 	@RequestMapping(value = "/authuser", method = RequestMethod.POST)
 	public String adduser(@RequestParam(value = "email") String email,	@RequestParam(value = "password") String password) {
 		
 		boolean val = false;
 		val = userManagmentService.authonticateUser(email, password);
 		if (val) {
+			if(userManagmentService.isAAdminUser(email)){
+				logger.debug(" user is admin ");
+			}else if(userManagmentService.isASuperUser(email)){
+				logger.debug(" user is a superuser ");
+			}else{
+				return "redirect:mainapp";
+			}
 			return "redirect:mainapp";
 		} else {
 			return "signup";
 			
 		}
 	}
-	
-	
+
 }

@@ -54,13 +54,13 @@
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 		</dependency>
-
+		
 	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.liquibased</groupId>
-				<artifactId>liquibased-maven-plugin</artifactId>
+				<groupId>org.liquibase</groupId>
+				<artifactId>liquibase-maven-plugin</artifactId>
 				<version>3.0.5</version>
 				<configuration>
 					<propertyFile>src/main/resources/liquibase/liquibase.properties</propertyFile>

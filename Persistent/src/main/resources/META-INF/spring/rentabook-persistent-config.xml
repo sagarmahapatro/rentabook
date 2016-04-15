@@ -45,6 +45,4 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
 		destroy-method="close" p:driverClassName="com.mysql.jdbc.Driver"
 		p:url="jdbc:mysql://localhost:3306/rentabook" p:username="sagar"
 		p:password="sagar" />
-		
-
 </beans>

@@ -10,6 +10,7 @@
 		<jdk.version>1.8</jdk.version>
 		<spring.version>4.2.5.RELEASE</spring.version>
 		<hibernate.version>5.1.0.Final</hibernate.version>
+		<org.mapstruct.version>1.1.0.Beta1</org.mapstruct.version>
 		<spring.ws.version>2.2.4.RELEASE</spring.ws.version>
 
 	</properties>
@@ -36,6 +37,12 @@
 	</build>
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>org.mapstruct</groupId>
+				<artifactId>mapstruct-jdk8</artifactId>
+				<version>${org.mapstruct.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-context</artifactId>
